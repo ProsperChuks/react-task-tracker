@@ -6,7 +6,8 @@ import "./index.css";
 let cardsList = [
   {
     id: 1,
-    title: "Read the Book",
+    title:
+      "This is a new card with a very very long title just to test our custom proptype defined for a card title",
     description: "I should read the **whole** book",
     color: "#bd8d31",
     status: "in-progress",
