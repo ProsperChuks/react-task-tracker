@@ -34,7 +34,10 @@ class Card extends Component {
           <span
             dangerouslySetInnerHTML={{ __html: marked(this.props.description) }}
           />
-          <CheckList cardId={this.props.id} tasks={this.props.tasks} />
+          <CheckList
+            cardId={this.props.id}
+            tasks={this.props.tasks}
+            taskCallbacks={this.props.taskCallbacks} />
         </div>
       );
     }
@@ -74,6 +77,7 @@ Card.propTypes = {
   title: titlePropType,
   color: PropTypes.string,
   description: PropTypes.string,
+  taskCallbacks: PropTypes.object,
   tasks: PropTypes.arrayOf(PropTypes.object)
 };
 
