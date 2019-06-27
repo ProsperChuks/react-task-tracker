@@ -19,7 +19,7 @@ class CheckList extends Component {
           defaultChecked={task.done}
           onChange={
             this.props.taskCallbacks.toggle.bind(
-              null, this.props.CardId, task.id, taskIndex
+              null, this.props.cardId, task.id, taskIndex
             )
           } />
         {task.name}
